@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMMT Starter Code</title>
+</head>
+<body>
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <data>
+        <person>
+            <name>John Doe</name>
+            <age>30</age>
+            <city>New York</city>
+        </person>
+        <person>
+            <name>Jane Smith</name>
+            <age>25</age>
+            <city>Los Angeles</city>
+        </person>
+    </data>
+
+</body>
+</html>
