@@ -1,0 +1,12 @@
+{
+  "name": "haversineformula",
+  "version": "1.0.0",
+  "description": "Simple application/creation of the Haversine formula",
+  "main": "haversine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
