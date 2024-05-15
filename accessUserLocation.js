@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const floatingButton = document.querySelector(".floating-button");
+    const accessLocation = document.querySelector("#access-location");
     const latitudez = document.querySelector("#latitude");
     const longitudez = document.querySelector("#longitude");
 
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     spinner.setAttribute("class","spinner");
     spinner.style.display = "inline-block"
 
-    floatingButton.addEventListener("click", () => {
+    accessLocation.addEventListener("click", () => {
 
         latitudez.appendChild(spinner);
         longitudez.appendChild(spinner.cloneNode(true));
