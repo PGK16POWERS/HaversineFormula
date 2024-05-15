@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styl.css">
     <script defer src="haversine.js"></script>
     <script defer src="accessUserLocation.js"></script>
+    <script defer src="main.js"></script>
 
     <!-- FONTS & ICONS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,37 +24,32 @@
     <section id="main-content">
         <div class="header-div">
             <h2>Reference Point:</h2>
-            <button type="button" class="floating-button">Get Me</button>
+            <button type="button" class="floating-button" id="access-location">Find Me</button>
         </div>
         
-
         <div class="ref-point-div">
             <span class="ref-point">Latitude: <span id="latitude" style="color: dodgerblue;"></span></span>
             <span class="ref-point">Longitude: <span id="longitude" style="color: dodgerblue;"></span></span>
         </div>
 
-        <h4>Given Points:</h4>
+        <div class="header-div">
+            <h4>Given Points:</h4>
+        </div>
+        
 
         <div class="other-point-div">
-
-            <div class="child-point-div">
-                <span class="ref-point">Latitude: <span style="color: gray;">34.0522</span></span>
-                <span class="ref-point">Longitude: <span style="color: gray;">118.2437</span>-</span>
-                <span class="distance">Distance From Ref = <span class="distRef" style="color: green;">10 kilometers</span></span>
-            </div>
-
-            <div class="child-point-div">
-                <span class="ref-point">Latitude: <span style="color: gray;">40.7128</span></span>
-                <span class="ref-point">Longitude: <span style="color: gray;">74.0060</span>-</span>
-                <span class="distance">Distance From Ref = <span class="distRef" style="color: green;">10 kilometers</span></span>
-            </div>
-
-            <div class="child-point-div">
-                <span class="ref-point">Latitude: <span style="color: gray;">51.5074</span></span>
-                <span class="ref-point">Longitude: <span style="color: gray;">-0.1278</span></span>
-                <span class="distance">Distance From Ref = <span class="distRef" style="color: green;">10 kilometers</span></span>
-            </div>
             
+        </div>
+
+        <div class="header-div">
+            <h4>Nearest Person:</h4>
+
+            <button type="button" class="floating-button" id="find-nearest-neighbhor">Find Nearest</button>
+            
+            <div id="display-input">
+                <span class="ref-point">Username: <span id="nearestUser" style="color: rgb(30, 49, 68);"></span></span>
+                <span class="ref-point">Distance: <span id="nearestDistance" style="color: rgb(30, 49, 68);"></span></span>
+            </div>
         </div>
     </section>
     
