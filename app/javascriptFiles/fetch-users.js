@@ -1,26 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     callJsonDataFunc();
-
 });
 
 function callJsonDataFunc() {
     
-    fetch("/main.json")
+    fetch("./main.json")
         .then(response => response.json())
         .then(data => {
 
-            // const filteredData = data.filter(content => content.town === "Sandton");
+            // Used to filter what we get from the data received
+            //const filteredData = data.filter(content => content.town === "Fourways Mall");
 
-            // const limitedData = filteredData.slice(0, 6);
+            // Used to filter how many documents are shown on the screen
+            const limitedData = data.slice(0, 6);
 
-            data.forEach(content => {
-                createElements(content.username, content.latitude, content.longitude)
+            // Used to filter through the data received
+            limitedData.forEach(content => {
+                // The function creates a card for each document found and allocates the specified parameters
+                createElements(content.username, content.latitude, content.longitude);
             })
 
         });
 }
 
+// This function creates the cards for each document called
 function createElements(username, latitude, longitude) {
 
     const parentDiv = document.querySelector(".other-point-div");
