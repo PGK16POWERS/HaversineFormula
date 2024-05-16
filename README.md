@@ -6,31 +6,18 @@ Briefly describe your project here. Mention that the project utilizes the Havers
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Contributing](#contribution)
 - [License](#license)
 
 ## Installation
-Provide instructions on how to install and set up the project. Include any dependencies or requirements.
-
-```bash
-$ git clone https://github.com/your_username/project_name.git
-$ cd project_name
-$ npm install # or yarn install
-
+No installations of any kind are required, except if you are using Node.js to serve html, preferably i suggest installing Live Server from Extensions.
 
 ## Usage
-const haversine = require('haversine');
+Depending on how you operate, lol, either use node server or live server to host the index HTML file.
+Overall the structure of this program is simple and straight forward.
 
-// Example usage
-const start = {
-  latitude: 40.7128,
-  longitude: -74.0060
-};
+## Contribution
+Feel free to contribute!!!
 
-const end = {
-  latitude: 34.0522,
-  longitude: -118.2437
-};
-
-const distance = haversine(start, end);
-console.log(distance); // Output: 3939.5
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
